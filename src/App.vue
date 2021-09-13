@@ -1,5 +1,5 @@
 <template>
-  <FolderView name="$" :folders="folders" :files="files" />
+  <FolderView name="root" :folders="folders" :files="files" />
 </template>
 
 <script>
@@ -16,9 +16,17 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+	:root {
+		font-size: 24px;
+	}
+
+	#app {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 </style>
